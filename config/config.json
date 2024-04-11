@@ -1,0 +1,14 @@
+{
+    "development": {
+        "PORT": 3000,
+        "MONGODB_URI": "mongodb+srv://aishwaryamensinkai:dX0uFOeESOgR1vJh@cluster0.nxeqbvo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+        "JWT_SECRET": "SECRET#123",
+        "JWT_EXP": "2m"
+    },
+    "production": {
+        "PORT": 80,
+        "MONGODB_URI": "mongodb+srv://aishwaryamensinkai:dX0uFOeESOgR1vJh@cluster0.nxeqbvo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+        "JWT_SECRET": "SECRET#123",
+        "JWT_EXP": "2m"
+    }
+}
