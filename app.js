@@ -14,15 +14,7 @@ process.setMaxListeners(Infinity);
 app.use(bodyParser.json());
 app.use(cors());
 app.use(passport.initialize());
-app.use("/.netlify/function/api", rtsIndex);
-
-// // Serve Angular app
-// app.use(express.static("Angular"));
-
-// // Route all other requests to Angular app
-// app.get("*", (req, res) => {
-//   res.sendFile(path.resolve(__dirname, "Angular", "index.html"));
-// });
+app.use("/api", rtsIndex);
 
 // error handler
 app.use((err, req, res, next) => {
